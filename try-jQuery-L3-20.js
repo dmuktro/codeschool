@@ -9,6 +9,22 @@
 //    Don't worry about the contents of the click handler function, 
 //    we'll get it working in the next few challenges.
 
+//Create the click handler here
 $(document).ready(function() {
-  //Create the click handler here
-  
+	$('#filters').on('click', '.on-sale', function() {
+  // find all vacations that are on-sale
+  // add a class to these vacations
+  $('.book').filter('.on-sale');
+	});
+});
+
+// remainings of part #19 
+$(document).ready(function() {
+  $('li').on('click', 'button', function() {
+    var tour = $(this).closest('.tour');
+    var discount = tour.data('discount');
+    var message = $('<span>Call 1-555-jquery-air for a $' + discount + ' discount.</span>');
+    tour.append(message);
+    $(this).remove();
+  });
+});
