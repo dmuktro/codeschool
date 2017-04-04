@@ -1,0 +1,21 @@
+// <!-- usage of jQuery as in  http://try.jquery.com/levels/3/challenges/24,  --> 
+//  some code of challenges #23 
+
+$(document).ready(function() {
+  $('#filters').on('click', '.on-sale', function() {
+    $('.highlight').removeClass('highlight');
+    $('.tour').filter('.on-sale').addClass('highlight');
+    $('.clearing').text("!clear highlight");
+  });
+
+  $('#filters').on('click', '.featured', function() {
+    $('.highlight').removeClass('highlight');
+    $('.tour').filter('.featured').addClass('highlight');
+    $('.clearing').text("!clear highlight");
+  });
+
+  $('#filters').on('click', '.clearing', function() {
+    $('.highlight').removeClass('highlight');
+    $('.clearing').text("[reserved]");
+  });
+});
