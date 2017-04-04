@@ -1,0 +1,13 @@
+/* <!-- usage of jQuery as in  http://try.jquery.com/ --> */
+
+.featured {
+	color: blue;
+}
+
+.on-sale {
+	color: red;
+}
+
+.highlight {
+	background-color: yellow;
+}
