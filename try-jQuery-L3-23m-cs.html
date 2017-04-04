@@ -1,21 +1,52 @@
-// <!-- usage of jQuery as in  http://try.jquery.com/levels/3/challenges/24,  --> 
-//  some code of challenges #23 
+<!-- usage of jQuery as in  http://try.jquery.com/levels/3/ -->
+<!-- LOCALHOST version 
+-->
 
-$(document).ready(function() {
-  $('#filters').on('click', '.on-sale', function() {
-    $('.highlight').removeClass('highlight');
-    $('.tour').filter('.on-sale').addClass('highlight');
-    $('.clearing').text("!clear highlight");
-  });
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Try jQuery, PART 3</title>
+<!-- for test PURPOSES only -->
+        <link rel="stylesheet" type="text/css" href="try-jQuery3_cs.css"/>
 
-  $('#filters').on('click', '.featured', function() {
-    $('.highlight').removeClass('highlight');
-    $('.tour').filter('.featured').addClass('highlight');
-    $('.clearing').text("!clear highlight");
-  });
+    </head>
+    <body>
 
-  $('#filters').on('click', '.clearing', function() {
-    $('.highlight').removeClass('highlight');
-    $('.clearing').text("[reserved]");
-  });
-});
+<!-- learning-fragment <HTML>
+-->
+<div id="all-tours">
+  <h3>Guided Tours</h3>
+  <ul>
+    <li class="usa tour on-sale" data-discount="299">
+      <h5>New York, New York</h5>
+      <span class="details">$1,899 for 7 nights</span>
+      <button class="book">Book Now</button>
+    </li>
+    <li class="europe tour on-sale" data-discount="176">
+      <h5>Paris, France</h5>
+      <span class="details">$2,299 for 7 nights</span>
+      <button class="book">Book Now</button>
+    </li>
+    <li class="asia tour featured" data-discount="349">
+      <h5>Tokyo, Japan</h5>
+      <span class="details">$3,799 for 7 nights</span>
+      <button class="book">Book Now</button>
+    </li>
+  </ul>
+  <ol id="filters">
+    <li><button class="on-sale">On Sale</button></li>
+    <li><button class="featured">featured</button></li>
+    <li><button class="clearing">[reserved]</button></li>
+  </ol>
+</div>
+<!-- learning-fragment </HTML>
+-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<!-- learning-fragment <SCRIPT> -->
+        <script src="try-jQuery3-23m_cs.js"></script>
+<!-- learning-fragment </SCRIPT> -->
+
+    </body>
+</html>
