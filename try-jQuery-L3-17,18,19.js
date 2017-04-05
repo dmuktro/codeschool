@@ -1,4 +1,6 @@
-// <!-- usage of jQuery as in  http://try.jquery.com/levels/3/challenges/17, 18, 19  --> 
+// <!-- usage of jQuery as in  http://try.jquery.com/levels/3/challenges/17
+,18 ,19 
+--> 
 // Let's add a bit more incentive to get people to book these tours by offering a discount if they book today. 
 // Create a discount variable, and then assign the discount that is stored in the 
 // data() attribute on the .tour element. To assign the correct data value, 
