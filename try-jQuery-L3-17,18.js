@@ -1,5 +1,5 @@
 // <!-- usage of jQuery as in  http://try.jquery.com/levels/3/challenges/17
-,18 ,19 
+,18 
 --> 
 // Let's add a bit more incentive to get people to book these tours by offering a discount if they book today. 
 // Create a discount variable, and then assign the discount that is stored in the 
@@ -16,7 +16,7 @@
 $(document).ready(function() {
   $('button').on('click', function() {
   	var tour = $(this).closest('.tour');
-    var discount = tour.data('discount');
+        var discount = tour.data('discount');
 	var message = $('<span>Call 1-555-jquery-air for a ' + discount + 'discount.</span>');    
     tour.append(message); 
     $(this).remove();
