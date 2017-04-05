@@ -1,4 +1,5 @@
-// http://try.jquery.com/levels/4/challenges/7/ (4.9,10,11)
+// http://try.jquery.com/levels/4/challenges/9/ 
+//  (,10,11)
 //  Write an event handler that watches for 
 //  mouseenter on any li elements within our .photos elements and runs an empty function. 
 //  We'll implement the function later on.  
